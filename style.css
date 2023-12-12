@@ -11,6 +11,19 @@
     list-style: none;
     font-size: 24px;
 }
+footer{
+    border: 2px black solid;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    
+}
+footer a{
+    margin: 2px 16px;
+}
+
 .boton{
     width: 75px;
     height: 75px;
@@ -95,4 +108,7 @@ h2{
     text-align: center;
     width: 100%;
     grid-column: 1/5;
+}
+@media screen and(min-width:500px) {
+    .material-symbols-outlined{display:none;}
 }
