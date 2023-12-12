@@ -42,10 +42,9 @@ footer a{
     margin-bottom: 24px;
     display: flex;
     flex-wrap: wrap;
-    justify-content:space-between;
     align-items: center;
-    padding: 14px
-    ;
+    padding: 14px;
+    justify-content: flex-end;
     min-width: 350px;
     border: 2px solid black;
     height: 15vh;
@@ -75,9 +74,10 @@ footer a{
 .logo{
     width: 70px;
     height: 70px;
-
+    position: absolute;
     background-color: black;
     border-radius: 100%;
+    left:12px ;
 }
 main{
     min-height: 50vh;
@@ -109,6 +109,17 @@ h2{
     width: 100%;
     grid-column: 1/5;
 }
-@media screen and(min-width:500px) {
-    .material-symbols-outlined{display:none;}
+.menu{
+    display: none;
 }
+@media (max-width:501px) {
+    nav{display: none;} 
+    nav ul{flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.637);
+    color: white;}
+    nav a{ width: 100%; color: white;}
+     nav li{font-size: 24px; 
+     margin: 12px 24px;}
+    .menu{display:flex;}
+}
+
