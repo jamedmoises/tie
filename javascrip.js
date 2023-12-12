@@ -35,3 +35,9 @@ primero.addEventListener("click",cambio1,true)
 segundo.addEventListener("click",cambio2,true)
 tercero.addEventListener("click",cambio3,true)
 cuarto.addEventListener("click",cambio4,true)
+
+let menu=document.getElementById("menuNavegacion")
+function mostrarMenu(){
+    menu.style.display="flex"
+    
+}
